@@ -1,0 +1,73 @@
+/* כפתור הוספת משתמש */
+.header-action-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 20px;
+}
+
+.header-action-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.03);
+}
+
+/* טבלה */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.custom-table .mat-header-cell {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+}
+
+.custom-table .mat-cell {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+    vertical-align: middle;
+}
+
+.column {
+    text-align: start;
+}
+
+/* כפתור מחיקה */
+.custom-table .delete {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 50%; /* עגול סביב האייקון */
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    padding: 0;
+}
+
+.custom-table .delete mat-icon {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.custom-table .delete:hover:not([disabled]) {
+    background-color: #c0392b;
+    transform: scale(1.1);
+}
+
+.custom-table .delete[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

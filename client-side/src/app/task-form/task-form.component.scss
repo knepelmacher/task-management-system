@@ -1,0 +1,61 @@
+:host{
+    label{
+        text-align: right;
+       display: block;
+       margin-bottom: 3vh;
+       color: white;
+       font-size: 3vh;
+    }
+    textarea,input{
+        border: 0.5vh solid rgb(0, 255, 0);
+        border-radius: 8%;
+    }
+    input:focus{
+        border-color: rgb(8, 122, 8);
+        outline: rgb(8, 122, 8);
+    }
+    textarea:focus{
+        border-color: rgb(8, 122, 8);
+        outline: rgb(8, 122, 8);
+    }
+    input, textarea{
+    width: 80%;
+
+    margin-top: 6px;
+    padding: 10px 12px;
+    border: 2px solid rgb(0, 255, 0);
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    text-align: right;
+    &.ng-invalid{
+      border: 2px solid rgb(247, 33, 33);
+      
+    }
+    
+  } 
+    form{
+        border: 0.3vh ,solid,green;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color:green;
+    }
+    form:hover{
+        border: 0.1vw, dotted, rgb(245, 245, 81);
+        outline: none
+       
+    }
+    button{
+        margin-left: 2vw;
+        background-color: white;
+        border-color: green;
+        color: black;
+    }
+    button :disabled{
+        background-color: grey;
+        color: black;
+    }
+
+}

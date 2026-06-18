@@ -1,0 +1,44 @@
+<mat-table [dataSource]="tasklist" class="mat-elevation-z8" >
+    <ng-container *ngFor="let column of columns" [matColumnDef]="column" >
+        <mat-header-cell *matHeaderCellDef >
+            <span [innerText]="column"></span>
+        </mat-header-cell >
+          <mat-cell *matCellDef="let element" >
+                @if(!iconColumns.includes(column)){
+                      @if(column === 'scheduling'){
+                          <span>{{ element[column] | date:'dd/MM/yyyy' }}</span>
+                      }
+                      @else{
+                          <span [innerText]="element[column]"></span>
+                      }
+                }
+                @if(column==='status'){
+                    <span [innerText]="element[column] | hebrew" ></span>
+                }
+            @if(column === 'update'){
+                <mat-icon (click)="updateTask(element)" >update</mat-icon>
+            }
+            @if(column === 'delete'){
+                <mat-icon (click)="deleteTask(element)">delete</mat-icon>
+            }
+            
+        </mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="columns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: columns;" appAppoverhiligh></mat-row>
+</mat-table>
+    <!-- <th>כותרת</th>
+    <th>מחיר</th>
+    <th>תאור</th>
+    <th>זמן</th>
+    <th>סטטוס</th>
+       
+@for(onetask of tasklist;track onetask){
+    <tr >
+      <td class="taskS" [innerText]="onetask.name"></td>
+            <td class="taskS" [innerText]="onetask.price | currency:'ILS' :'symbol':'1.0-0'"></td>
+            <td class="taskS" [innerText]="onetask.scheduling"></td>
+            <td class="taskS" [innerText]="onetask.discription"></td>
+            <td class="taskS" [innerText]="onetask.status | hebrew"></td></tr>
+} -->
+ 

@@ -1,0 +1,8 @@
+@import './elements/elements.scss';
+button{
+     background-color: $colorYellow;
+     color:$colorBlue;
+     border: 0.2vw,solid,$colorOrange;
+     width: 8vw;
+     height: 5vh;
+}

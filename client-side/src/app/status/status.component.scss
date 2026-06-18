@@ -1,0 +1,24 @@
+:host{
+    .current{
+        border-radius: 50%;
+        color: white;
+        border: 0.1vw solid orange;
+        padding: 0.1vw;
+    }
+    mat-icon {
+        margin: 0 0.5rem;
+        cursor: pointer;
+        transition: transform 0.15s ease, color 0.15s ease;
+    }
+    mat-icon:hover {
+        transform: scale(1.1);
+        color: #ffd740;
+    }
+    label {
+        color: white;
+       padding: 3vw;
+       font-size: 1vh;
+       font-weight: 50;
+    }
+
+}

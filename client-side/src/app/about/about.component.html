@@ -1,0 +1,45 @@
+<mat-card class="about-card">
+
+  <mat-card-header class="card-header">
+    <mat-card-title class="title">אודות האתר</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content class="card-content">
+
+    <p class="intro">
+      אתר זה נכתב על ידי <strong>{{ developerName }}</strong>
+    </p>
+
+    <div class="info-grid">
+      <div class="info-box">
+        <div class="label">שרת</div>
+        <div class="value">Node.js</div>
+      </div>
+
+      <div class="info-box">
+        <div class="label">קליינט</div>
+        <div class="value">Angular 19</div>
+      </div>
+
+      <div class="info-box">
+        <div class="label">מסד נתונים</div>
+        <div class="value">SQL Server</div>
+      </div>
+    </div>
+
+    <div class="section-title">טכנולוגיות בשימוש</div>
+
+    <div class="chips">
+      @for (tech of technologies; track tech) {
+        <span class="chip">{{ tech }}</span>
+      }
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <div class="clock">
+      🕒 השעה הנוכחית: <strong>{{ currentTime }}</strong>
+    </div>
+
+  </mat-card-content>
+</mat-card>

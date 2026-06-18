@@ -1,0 +1,34 @@
+<form [formGroup]="userForm">
+    <label>
+        שם משתמש
+        <input type="text" formControlName="userName" placeholder="הכנס שם משתמש" />
+    </label>
+
+    <label>
+        טלפון
+        <input type="text" formControlName="phone" placeholder="הכנס מספר טלפון" />
+    </label>
+
+    <label>
+        אימייל
+        <input type="email" formControlName="email" placeholder="הכנס כתובת אימייל" />
+    </label>
+
+    <label>
+        סיסמה
+        <input type="password" formControlName="password" placeholder="הכנס סיסמה" />
+    </label>
+
+    <label>
+        בחר תפקיד:
+        <select formControlName="role">
+            <option value="user">משתמש</option>
+            <option value="admin">מנהל</option>
+        </select>
+    </label>
+
+    <div class="buttons">
+        <button [disabled]="userForm.invalid" (click)="save()">שמור</button>
+        <button (click)="cancel()">ביטול</button>
+    </div>
+</form>

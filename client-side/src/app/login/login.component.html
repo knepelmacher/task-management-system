@@ -1,0 +1,31 @@
+<div class="page">
+  <div class="form">
+   <form [formGroup]="formGroup" class="my_form" (ngSubmit)="logIn()">
+    <div class="Any_input">
+    <label for="username">שם</label>
+    <input
+    id="username"
+    type="text"
+    formControlName="username"
+    required
+    placeholder="enter the user name "
+    />
+    <span *ngIf="formGroup.get('username')?.invalid && mouseoverLogin" >enterName</span>
+    </div>
+    <div class="Any_input">
+    <label for="password">סיסמא</label>
+    <input id="password" 
+    type="password" 
+    formControlName="password"
+    required
+    placeholder="enter the password "
+    />
+    <span *ngIf="formGroup.get('password')?.invalid && mouseoverLogin" >enterPassword</span>
+    </div>
+    <div (mouseenter)="mouseoverLogin=true"
+    (mouseleave)="mouseoverLogin=false">
+    <button type="submit" [disabled]="formGroup.invalid">login</button>
+    </div>
+   </form>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+
+        <div  class="div"  appAppoverhiligh>
+            <div class="taskS" [innerText]="task.name"></div>
+            <div class="taskS" [innerText]="task.price | currency:'ILS' :'symbol':'1.0-0'"></div>
+            <div class="taskS">{{ task.scheduling | date:'dd/MM/yyyy' }}</div>
+            <div class="taskS" [innerText]="task.discription"></div>
+            <div class="taskS" [innerText]="task.status | hebrew"></div>
+            <mat-icon>{{task.status | statusIcon}}</mat-icon>
+           
+       <!-- <ng-content select="[icon]"></ng-content> -->
+        </div>
+

@@ -1,0 +1,19 @@
+<div>
+   <label>
+      סטטוס
+      <mat-icon [ngClass]="{'current':status===theStatusEnum.pending}"
+         [matTooltip]="statusToString(theStatusEnum.pending)"
+         (click)="changeStatus(theStatusEnum.pending)">chair</mat-icon>
+    <mat-icon [ngClass]="{'current':status===theStatusEnum.process}"
+         [matTooltip]="statusToString(theStatusEnum.process)"
+         (click)="changeStatus(theStatusEnum.process)">computer</mat-icon>
+    <mat-icon [ngClass]="{'current':status===theStatusEnum.completed}"
+         [matTooltip]="statusToString(theStatusEnum.completed)"
+         (click)="changeStatus(theStatusEnum.completed)">camera</mat-icon>
+    <mat-icon [ngClass]="{'current':status===theStatusEnum.cancel}"
+         [matTooltip]="statusToString(theStatusEnum.cancel)"
+         (click)="changeStatus(theStatusEnum.cancel)">clear</mat-icon>
+    
+   
+   </label>
+</div>

@@ -1,0 +1,95 @@
+<div class="portfolio-card" dir="rtl">
+
+  <!-- HEADER -->
+  <section class="header-section">
+    <div class="header-content">
+      <h1>{{hd.name}}</h1>
+      <p class="summary">
+        בוגרת הנדסאים במגמת תוכנה ומפתחת Full Stack.
+        פיתחתי מערכות מקצה לקצה, כולל צד שרת, צד לקוח ומסדי נתונים.
+        בין הפרויקטים: מערכת השאלת ספרים ב-Java ו-React TS,
+        מערכת Web ב-Angular, NodeJS ו-SQL,
+        ומערכת מבחנים עם בדיקה אוטומטית ב-Python ו-React TS.
+        נהנית ללמוד טכנולוגיות חדשות, להתמודד עם אתגרים ולבנות פתרונות איכותיים.
+      </p>
+
+      <div class="action-buttons">
+        <button class="primary-btn">להזמנת פרויקט</button>
+        <button class="primary-btn" (click)="gotoTasks()">לצפייה בפרויקט</button>
+        <button class="primary-btn" (click)="openCV()">קורות חיים</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills-section">
+    <h2>טכנולוגיות</h2>
+    <div class="skills-grid">
+      <div class="skill">{{hd.text1}}</div>
+      <div class="skill">{{hd.text2}}</div>
+      <div class="skill">{{hd.text3}}</div>
+      <div class="skill">{{hd.text4}}</div>
+      <div class="skill">{{hd.text5}}</div>
+      <div class="skill">{{hd.text6}}</div>
+      <div class="skill">{{hd.text7}}</div>
+      <div class="skill">{{hd.text8}}</div>
+      <div class="skill">{{hd.text9}}</div>
+      <div class="skill">{{hd.text10}}</div>
+      <div class="skill">{{hd.text11}}</div>
+      <div class="skill">{{hd.text12}}</div>
+      <div class="skill">{{hd.text13}}</div>
+      <div class="skill">{{hd.text14}}</div>
+      <div class="skill">{{hd.text15}}</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects-section">
+    <h2>פרויקטים נבחרים</h2>
+    <div class="projects-grid">
+      <div class="project-card" id="python-card">
+        <h3>מערכת השאלת ספרים</h3>
+        <p>
+          מערכת לניהול והשאלת ספרים, כולל ניהול משתמשים וחיפוש ספרים.
+          צד שרת Java וצד לקוח React TypeScript.
+        </p>
+        <div class="tags">
+          <span>Java</span>
+          <span>React TS</span>
+          <span>REST API</span>
+        </div>
+      </div>
+      <div class="project-card" id="angular-card">
+        <h3>מערכת Angular</h3>
+        <p>
+          מערכת Web מלאה עם Angular, NodeJS ו-SQL.
+          כוללת ניהול נתונים וממשק משתמש רספונסיבי.
+        </p>
+        <div class="tags">
+          <span>Angular</span>
+          <span>NodeJS</span>
+          <span>SQL</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>מערכת מבחנים</h3>
+        <p>
+          מערכת ליצירה וביצוע מבחנים עם בדיקה אוטומטית.
+          Backend בפייתון ו-Frontend ב-React TypeScript ו-SQL.
+        </p>
+        <div class="tags">
+          <span>Python</span>
+          <span>React TS</span>
+          <span>Automation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section">
+    <button class="primary-btn" (click)="click()">יצירת קשר</button>
+    <div class="phone">{{hd.phon}}</div>
+  </section>
+
+</div>

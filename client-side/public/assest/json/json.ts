@@ -1,0 +1,35 @@
+'{
+   id:"1",
+   name:"להכין ש.ב",
+   price:"100",
+   scheduling:"בערב",
+   discription:"java",
+   status:statuasEnum.completed},
+     {
+   id:"2",
+   name:"לקנות חלב",
+   price:"12",
+   scheduling:"בערב",
+   discription:"ללכת למכולת",
+   status:statuasEnum.pending},
+     {
+   id:"3",
+   name:"ללמוד למבחן",
+   price:"150",
+   scheduling:"בערב",
+   discription:"SQL",
+   status:statuasEnum.cancel},
+      {
+   id:"4",
+   name:"ללמוד למבחן",
+   price:"150",
+   scheduling:"בערב",
+   discription:"PYTHON",
+   status:statuasEnum.pending},
+    {
+   id:"1",
+   name:"להכין ש.ב",
+   price:"100",
+   scheduling:"בערב",
+   discription:"java",
+   status:statuasEnum.process}'

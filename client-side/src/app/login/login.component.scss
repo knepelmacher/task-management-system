@@ -1,0 +1,81 @@
+:host{
+    .page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(249, 255, 248);
+        height: 100vh;
+    }
+    .form{
+      border: 0.2vw,solid,chartreuse;
+      border-radius: 20%;
+      width: 20vw;
+      height: 35vh;
+      background-color: black;
+      padding: 3vh;
+     
+    }
+    input{
+        display: block;
+        border-color: green;
+        border-radius: 20%;
+        margin-left: 2vw;
+        width: 15vw;
+        height: 3vh;
+        
+    }
+    .Any_input{
+        margin-bottom: 5vh;
+        height: 5vh;
+    }
+    .Any_input label{
+       padding: 1vh;
+       font-size: 3vh;
+       color: rgb(255, 255, 255);
+       font-family:Arial;
+
+    }
+    .Any_input input{
+      
+       width: 16vw;
+       
+    }
+      input:focus{
+        outline: none;
+    }
+    div{
+        text-align: center;
+        
+    }
+    
+    button{
+        margin-top: 8vh;
+        border: 0.2vw,solid,chartreuse;
+        border-radius: 20%;
+        color: white;
+        background-color:chartreuse;
+        font-size: 3vh;
+        width: 18vw;
+       
+        
+    }
+    
+    button:hover{
+       background-color:rgb(128, 243, 14); 
+    }
+    
+    span{
+        
+        font-weight: bold;
+        color: aqua;
+    }
+    .my_form{
+       margin-bottom: 0vh;
+    }
+    button:disabled{
+        border: 0.2vw,solid, green;
+        background-color: green;
+        cursor: not-allowed;
+        
+    } 
+}
