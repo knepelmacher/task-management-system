@@ -44,7 +44,6 @@ The system includes authentication, task tracking, categories, deadlines, and a 
 - Server status verification
 
 ---
-# EmptyProject
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
 
